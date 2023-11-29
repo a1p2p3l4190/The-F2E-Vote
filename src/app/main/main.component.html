@@ -1,0 +1,32 @@
+<!-- 主要頁面 -->
+<main class="w-[100%] h-[100%] my-0 mx-auto  justify-start -z-50">
+  <div>
+    <div class="flex">
+      <div class="home  w-[32px] h-[32px] my-5"></div>
+      <div class="search  w-[32px] h-[32px] my-5"></div>
+      <select class="w-[365px] h-[35px] border-radius-5px my-5" >
+        <option *ngFor="let city of taiwanCities">{{ city }}</option>
+      </select>
+    </div>
+  </div>
+  <div class="flex">
+    <div>
+      <ng-container *ngFor="let item of electionData">
+        <li (click)="changeYear(item)" class="mr-[15px] flex flex-col items-center cursor-pointer"
+          [ngClass]="{ '-mt-5': item.selected }">
+          <span class="opacity-0" [ngClass]="{ 'triangle opacity-100': item.selected }"></span>
+          <p [ngClass]="{
+              ' text-[30px] -mt-4': item.selected,
+              'text-noFocus': !item.selected
+            }">
+            {{ item.date }}
+          </p>
+        </li>
+      </ng-container>
+      <app-map class="w-[700px] absolute z-50"></app-map>
+      <div class="chart-container">
+        <div id="pie-chart" class="chart"></div>
+      </div>
+    </div>
+  </div>
+</main>

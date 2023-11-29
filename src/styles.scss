@@ -1,0 +1,24 @@
+@import "tailwindcss/base";
+@import "tailwindcss/components";
+@import "tailwindcss/utilities";
+@import url("https://fonts.googleapis.com/css2?family=Noto+Sans+TC:wght@100;200;300;400;500;600;700;800;900&display=swap");
+
+@font-face {
+  font-family: "Mamelon";
+  src: url("assets/font/Mamelon.otf");
+  font-weight: 700;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: "Mamelon";
+  src: url("assets/font/Mamelon.otf");
+  font-weight: 400;
+  font-style: normal;
+}
+
+body {
+  font-family: "Mamelon";
+  color: white;
+  background-color: #2A2323;
+}

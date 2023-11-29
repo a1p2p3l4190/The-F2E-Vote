@@ -1,0 +1,34 @@
+.triangle {
+  border-right: 12px solid transparent;
+  border-left: 12px solid transparent;
+  border-top: 28px solid transparent;
+  display: inline-block;
+}
+
+.home {
+  background: url('../../assets/img/home.png') ;
+  margin-left: 10px;
+}
+
+.search {
+  background: url('../../assets/img/search.png');
+  margin-left: 10px;
+}
+
+select {
+  margin-left: 20px;
+}
+
+option{
+  color: black;
+}
+
+.chart-container {
+  width: 100%;
+  height: 400px; /* 設定一個合適的高度 */
+}
+
+.chart {
+  width: 100%;
+  height: 100%;
+}
